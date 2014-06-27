@@ -1,0 +1,4 @@
+quailclient
+===========
+
+Client for quail
