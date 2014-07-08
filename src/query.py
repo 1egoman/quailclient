@@ -5,7 +5,7 @@ class Query(object):
 
   def __init__(self, text, host, port, secret):
     # do Query
-    url = "http://%s:%s/%s/%s" % (host, port, secret, text)
+    url = "http://%s:%s/v2/%s/query/%s" % (host, port, secret, text)
     try:
       ans = urllib2.urlopen(url)
       data = ans.read()
